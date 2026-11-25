@@ -1,0 +1,131 @@
+/* Timone - sito di presentazione. Nessuna risorsa esterna. */
+:root {
+  --sfondo: #f3f1ec;
+  --riquadro: #ffffff;
+  --testo: #16202b;
+  --testo2: #5d6875;
+  --linea: #dedad1;
+  --blu: #10243a;
+  --accento: #0b7a75;
+  --accento-tenue: #e6f3f1;
+  --giallo: #f2c14e;
+  --su-giallo: #201800;
+  --su-blu: #e8edf2;
+  --su-accento: #ffffff;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --sfondo: #0d1620;
+    --riquadro: #15212e;
+    --testo: #e8edf2;
+    --testo2: #9aa7b4;
+    --linea: #263647;
+    --blu: #0a1420;
+    --accento: #4fc3bb;
+    --accento-tenue: #12302f;
+    --su-accento: #0d1620;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--sfondo);
+  color: var(--testo);
+  font: 1rem/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  overflow-wrap: anywhere;
+}
+img, svg { max-width: 100%; height: auto; }
+a { color: var(--accento); text-underline-offset: 3px; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 3px solid var(--giallo); outline-offset: 2px; }
+.header :focus-visible, .hero :focus-visible { outline-color: var(--giallo); }
+main :focus-visible, .footer :focus-visible { outline-color: var(--accento); }
+
+.salta {
+  position: absolute; left: 8px; top: -60px; z-index: 10;
+  background: var(--giallo); color: var(--su-giallo);
+  padding: 8px 14px; border-radius: 10px; font-weight: 600;
+}
+.salta:focus { top: 8px; }
+
+.contenitore { width: 100%; max-width: 62rem; margin: 0 auto; padding: 0 16px; }
+
+/* intestazione */
+.header { background: var(--blu); color: var(--su-blu); }
+.header .contenitore { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; padding-top: 12px; padding-bottom: 12px; }
+.marchio { display: flex; align-items: center; gap: 10px; color: var(--su-blu); font-weight: 700; font-size: 1.2rem; text-decoration: none; }
+.marchio img { width: 32px; height: 32px; border-radius: 8px; }
+.menu { display: flex; flex-wrap: wrap; gap: 4px 4px; margin: 0; padding: 0; list-style: none; flex: 1 1 auto; }
+.menu a { display: inline-block; padding: 8px 10px; color: var(--su-blu); text-decoration: none; border-radius: 8px; }
+.menu a:hover { background: rgba(255,255,255,.12); }
+.menu a[aria-current="page"] { background: rgba(255,255,255,.16); font-weight: 600; }
+
+/* pulsanti */
+.btn {
+  display: inline-block; padding: 11px 18px; border-radius: 10px;
+  font-weight: 600; text-decoration: none; border: 2px solid transparent;
+  background: var(--accento); color: var(--su-accento); line-height: 1.3; text-align: center;
+}
+.btn:hover { filter: brightness(1.08); }
+.btn-giallo { background: var(--giallo); color: var(--su-giallo); }
+.btn-bordo { background: transparent; color: var(--su-blu); border-color: rgba(232,237,242,.7); }
+.btn-piccolo { padding: 8px 14px; }
+
+/* parte alta */
+.hero { background: var(--blu); color: var(--su-blu); padding: 28px 0 40px; }
+.hero h1 { font-size: 2rem; line-height: 1.2; margin: 12px 0; }
+.hero p { max-width: 42rem; margin: 0 0 16px; font-size: 1.05rem; }
+.etichetta {
+  display: inline-block; padding: 4px 12px; border-radius: 999px;
+  border: 1px solid var(--giallo); color: var(--giallo); font-size: .9rem; font-weight: 600;
+}
+.azioni { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 8px; }
+
+/* contenuti */
+main { padding-bottom: 32px; }
+main h1 { font-size: 1.9rem; line-height: 1.2; margin: 28px 0 8px; }
+main h2 { font-size: 1.45rem; line-height: 1.25; margin: 36px 0 12px; }
+main h3 { font-size: 1.1rem; margin: 0 0 6px; }
+.lead { font-size: 1.1rem; color: var(--testo2); max-width: 44rem; }
+.griglia { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); }
+.riquadro { background: var(--riquadro); border: 1px solid var(--linea); border-radius: 14px; padding: 16px; }
+.riquadro p { margin: 6px 0; }
+.riquadro h3 + p { margin-top: 0; }
+.tenue { background: var(--accento-tenue); }
+.nota { color: var(--testo2); font-size: .95rem; }
+.avviso { border-left: 5px solid var(--accento); background: var(--accento-tenue); padding: 12px 16px; border-radius: 10px; margin: 16px 0; }
+.avviso p { margin: 4px 0; }
+.attenzione { border-left-color: #8a5a00; }
+ol, ul { padding-left: 1.3rem; }
+li { margin: 4px 0; }
+.passi { counter-reset: passo; list-style: none; padding: 0; display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr)); }
+.passi li { counter-increment: passo; background: var(--riquadro); border: 1px solid var(--linea); border-radius: 14px; padding: 14px 16px; margin: 0; }
+.passi li::before { content: counter(passo); display: block; width: 30px; height: 30px; line-height: 30px; text-align: center; border-radius: 50%; background: var(--accento); color: var(--su-accento); font-weight: 700; margin-bottom: 8px; }
+.modulo dl { margin: 8px 0 0; }
+.modulo dt { font-weight: 600; font-size: .9rem; color: var(--testo2); margin-top: 8px; }
+.modulo dd { margin: 0; }
+.mancante { background: var(--accento-tenue); border: 1px dashed var(--accento); border-radius: 6px; padding: 0 6px; font-style: italic; }
+.provvisorio { border: 2px dashed var(--linea); border-radius: 14px; padding: 18px; text-align: center; color: var(--testo2); background: var(--riquadro); }
+.cta { background: var(--riquadro); border: 1px solid var(--linea); border-radius: 14px; padding: 20px; margin-top: 36px; }
+.cta h2 { margin-top: 0; }
+
+/* piè di pagina */
+.footer { background: var(--blu); color: var(--su-blu); padding: 24px 0; margin-top: 24px; }
+.footer a { color: var(--giallo); }
+.footer p { margin: 6px 0; }
+.footer .mancante { background: transparent; border-color: var(--su-blu); }
+.footer-lista { display: flex; flex-wrap: wrap; gap: 4px 16px; padding: 0; list-style: none; }
+
+@media (min-width: 768px) {
+  .hero h1 { font-size: 2.6rem; }
+  .hero { padding: 48px 0 56px; }
+  main h1 { font-size: 2.3rem; }
+  .menu { justify-content: center; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+@media print { .header, .footer, .salta { display: none; } .hero { background: none; color: #000; } }
+
+.senza-punti { list-style: none; padding: 0; }
+.titolo-gruppo { font-size: 1.25rem; margin-top: 28px; }
+.nessun-margine { margin-top: 0; }

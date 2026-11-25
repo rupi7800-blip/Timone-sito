@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'none'; style-src 'self'; img-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="color-scheme" content="light dark">
+<title>Funzioni · Timone</title>
+<meta name="description" content="Che cosa fa Timone: lettura del bilancio, 32 indici, diagnosi e 13 moduli per margini, risorse, investimenti, clienti e opportunità. Con i limiti dichiarati.">
+<link rel="icon" href="icona.svg" type="image/svg+xml">
+<link rel="stylesheet" href="stile.css">
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="header">
+<div class="contenitore">
+<a class="marchio" href="index.html"><img src="icona.svg" width="32" height="32" alt="">Timone</a>
+<nav aria-label="Principale"><ul class="menu"><li><a href="index.html">Timone</a></li><li><a href="funzioni.html" aria-current="page">Funzioni</a></li><li><a href="dati.html">I tuoi dati</a></li><li><a href="prova.html">Come provarlo</a></li></ul></nav>
+<a class="btn btn-giallo btn-piccolo" href="#contatto">Chiedi una dimostrazione</a>
+</div>
+</header>
+
+<main id="contenuto"><div class="contenitore">
+<h1>Cosa fa Timone</h1>
+<p class="lead">Un nucleo per leggere il bilancio e capire la situazione, più 13 moduli facoltativi da attivare quando servono.</p>
+<div class="avviso attenzione"><p><strong>Versione di prova.</strong> Alcune funzioni non sono ancora provate in condizioni reali: lo dichiariamo accanto a ciascuna.</p></div>
+
+<h2>Il nucleo</h2>
+<div class="griglia"><div class="riquadro"><h3>Lettura del bilancio XBRL</h3><p>Legge il file XBRL (il formato digitale con cui si deposita il bilancio), anche in un file firmato digitalmente (<code>.p7m</code>). <strong>La firma digitale non viene verificata.</strong> La lettura XBRL prevede forme ordinaria, abbreviata e micro; con un bilancio reale è stata provata finora la forma micro.</p></div><div class="riquadro"><h3>Inserimento a mano e CSV</h3><p>Puoi inserire i dati a mano oppure importarli da un file CSV (una tabella che molti programmi sanno esportare).</p></div><div class="riquadro"><h3>Riclassificazione</h3><p>Riordina le voci del bilancio in uno schema leggibile.</p></div><div class="riquadro"><h3>Rendiconto ricostruito</h3><p>Ricostruisce il rendiconto dei flussi di cassa: è una <strong>stima</strong>, e come tale è etichettata.</p></div><div class="riquadro"><h3>Costi fissi e variabili</h3><p>Separa i costi in fissi e variabili.</p></div><div class="riquadro"><h3>32 indici</h3><p>Ciascuno con formula, voci usate, significato e limiti.</p></div><div class="riquadro"><h3>Diagnosi</h3><p>Segnala le criticità da affrontare per prime. Le soglie sono regole generali, non valori del tuo settore.</p></div><div class="riquadro"><h3>Budget e scostamenti</h3><p>Budget e confronto con il consuntivo, con analisi degli scostamenti, <strong>senza separare l'effetto prezzo dall'effetto volume</strong>.</p></div><div class="riquadro"><h3>Scenari</h3><p>Simulazioni con ipotesi tue, etichettate come tali.</p></div><div class="riquadro"><h3>Resoconto da stampare</h3><p>Un resoconto da stampare o salvare in PDF dal browser: <em>da verificare sulla versione pubblicata</em>.</p></div><div class="riquadro"><h3>Più aziende</h3><p>Si possono gestire più aziende, utile per consulenti e commercialisti.</p></div></div>
+
+<h2>I 13 moduli</h2>
+<section aria-labelledby="g1"><h3 id="g1" class="titolo-gruppo">1. Margini e produzione</h3>
+<p class="lead nessun-margine">Capire dove si guadagna e dove si perde.</p>
+<div class="griglia"><div class="riquadro modulo"><h3>Commesse e marginalità</h3>
+<dl><dt>Cosa fa</dt><dd>Mette a confronto i dati gestionali con la contabilità, fino al risultato operativo.</dd><dt>Dati che servono</dt><dd>Commesse inserite a mano.</dd><dt>Cosa non fa</dt><dd>Non importa le commesse da altri programmi.</dd></dl></div><div class="riquadro modulo"><h3>Produzione con OEE</h3>
+<dl><dt>Cosa fa</dt><dd>Calcola l'OEE (l'efficienza complessiva degli impianti).</dd><dt>Dati che servono</dt><dd>Registrazioni che inserisci tu e il tempo ciclo standard.</dd><dt>Cosa non fa</dt><dd>Nessun collegamento a sensori o macchine.</dd></dl></div><div class="riquadro modulo"><h3>Decisioni «produrre o fermare?»</h3>
+<dl><dt>Cosa fa</dt><dd>Confronta sei alternative sui numeri che inserisci.</dd><dt>Dati che servono</dt><dd>Dati inseriti a mano.</dd><dt>Cosa non fa</dt><dd>Non decide al posto tuo: la decisione resta a te.</dd></dl></div></div></section><section aria-labelledby="g2"><h3 id="g2" class="titolo-gruppo">2. Risorse</h3>
+<p class="lead nessun-margine">Capire quanto pesano scorte, persone ed energia.</p>
+<div class="griglia"><div class="riquadro modulo"><h3>Magazzino e scorte</h3>
+<dl><dt>Cosa fa</dt><dd>Lavora su inventari a una data e mostra quanto capitale è fermo.</dd><dt>Dati che servono</dt><dd>Inventari a una data, inseriti da te.</dd><dt>Cosa non fa</dt><dd>Non gestisce lotti e scadenze.</dd></dl></div><div class="riquadro modulo"><h3>Personale</h3>
+<dl><dt>Cosa fa</dt><dd>Calcola costo aziendale, costo orario e produttività; contributi e TFR non inseriti sono stimati con aliquota media ed etichettati.</dd><dt>Dati che servono</dt><dd>Riepilogo annuale per persona.</dd><dt>Cosa non fa</dt><dd>Non è un programma paghe.</dd></dl></div><div class="riquadro modulo"><h3>Energia e utenze</h3>
+<dl><dt>Cosa fa</dt><dd>Analizza le bollette e confronta le offerte.</dd><dt>Dati che servono</dt><dd>Bollette inserite a mano o importate da CSV; offerte inserite da te.</dd><dt>Cosa non fa</dt><dd>Non legge le bollette in PDF. Confronta solo le offerte che inserisci.</dd></dl></div></div></section><section aria-labelledby="g3"><h3 id="g3" class="titolo-gruppo">3. Investimenti e futuro</h3>
+<p class="lead nessun-margine">Valutare scelte che pesano nel tempo.</p>
+<div class="griglia"><div class="riquadro modulo"><h3>Investimenti</h3>
+<dl><dt>Cosa fa</dt><dd>Calcola VAN (valore attuale netto), TIR (tasso interno di rendimento) e tempo di recupero.</dd><dt>Dati che servono</dt><dd>Costi e benefici attesi.</dd><dt>Cosa non fa</dt><dd>I benefici sono tue ipotesi: Timone non li stima.</dd></dl></div><div class="riquadro modulo"><h3>Finanziamenti e agevolazioni</h3>
+<dl><dt>Cosa fa</dt><dd>Simula i finanziamenti e tiene un registro delle agevolazioni.</dd><dt>Dati che servono</dt><dd>Dati dei finanziamenti inseriti a mano; le agevolazioni le compili tu.</dd><dt>Cosa non fa</dt><dd>Il tasso effettivo calcolato non va letto come TAEG (il tasso annuo effettivo globale indicato nel contratto). Il registro delle agevolazioni non cerca da solo: per cercare c'è il modulo Ricerca bandi, con risultati da verificare.</dd></dl></div><div class="riquadro modulo"><h3>Piano pluriennale</h3>
+<dl><dt>Cosa fa</dt><dd>Proietta i numeri a 1, 3, 5 e 10 anni.</dd><dt>Dati che servono</dt><dd>Ipotesi di crescita e di costo inserite da te.</dd><dt>Cosa non fa</dt><dd>Imposte semplificate. Non è un documento pronto per le banche.</dd></dl></div></div></section><section aria-labelledby="g4"><h3 id="g4" class="titolo-gruppo">4. Clienti e confronti</h3>
+<p class="lead nessun-margine">Capire da chi dipendi e come ti posizioni.</p>
+<div class="griglia"><div class="riquadro modulo"><h3>Commerciale</h3>
+<dl><dt>Cosa fa</dt><dd>Analizza clienti e vendite, anche la dipendenza da pochi clienti.</dd><dt>Dati che servono</dt><dd>Dati di vendita che fornisci tu.</dd><dt>Cosa non fa</dt><dd>Non sostituisce un programma di gestione dei clienti.</dd></dl></div><div class="riquadro modulo"><h3>Confronti e ISA</h3>
+<dl><dt>Cosa fa</dt><dd>Confronta i tuoi indici con quelli dei concorrenti e con riferimenti che riportano la loro fonte. Registra il punteggio ISA (indici sintetici di affidabilità fiscale) della tua dichiarazione e mostra il livello di benefici premiali.</dd><dt>Dati che servono</dt><dd>Bilanci dei concorrenti che carichi tu e riferimenti inseriti.</dd><dt>Cosa non fa</dt><dd>Non contiene medie di settore. Non calcola il punteggio ISA. Il caricamento di bilanci reali di concorrenti non è ancora provato.</dd></dl></div></div></section><section aria-labelledby="g5"><h3 id="g5" class="titolo-gruppo">5. Opportunità e assistenza</h3>
+<p class="lead nessun-margine">Cercare spunti e farsi aiutare, con la dovuta cautela.</p>
+<div class="griglia"><div class="riquadro modulo"><h3>Ricerca bandi</h3>
+<dl><dt>Cosa fa</dt><dd>Apre il motore di ricerca con i tuoi criteri; con un servizio AI cerca i bandi e scarta quelli senza link alla fonte ufficiale. <strong>Non ancora provata con servizi reali.</strong></dd><dt>Dati che servono</dt><dd>Per la ricerca semplice nulla; per quella con l'AI, un servizio AI configurato da te.</dd><dt>Cosa non fa</dt><dd>I risultati vanno verificati: l'ammissibilità non viene controllata. Non è una ricerca completa né automatica: un bando può mancare e date e importi possono essere letti male.</dd></dl></div><div class="riquadro modulo"><h3>Assistente AI</h3>
+<dl><dt>Cosa fa</dt><dd>Risponde a domande sui tuoi dati. È facoltativo. <strong>Non ancora provato con servizi reali.</strong></dd><dt>Dati che servono</dt><dd>Un servizio AI configurato da te.</dd><dt>Cosa non fa</dt><dd>Può sbagliare: va ricontrollato. Vedi anche «I tuoi dati».</dd></dl></div></div></section>
+<section class="cta" aria-labelledby="cta-t">
+<h2 id="cta-t">Vuoi vederlo in azione?</h2>
+<p>Timone è in prova e cerca aziende pilota. Scrivici per vedere una dimostrazione con dati simulati.</p>
+<p><a class="btn" href="#contatto">Chiedi una dimostrazione</a></p>
+</section>
+</div></main>
+<footer class="footer">
+<div class="contenitore">
+<p><strong>Timone</strong> · versione di prova · riferimento: app Timone 1.15.2</p>
+<p>Questo sito non usa biscotti, statistiche o moduli. <a href="privacy.html">Riservatezza</a></p>
+<p id="contatto"><strong>Chiedi una dimostrazione:</strong> scrivi a <span class="mancante">da completare</span><!-- DA-COMPILARE: EMAIL_CONTATTO --></p>
+<ul class="footer-lista"><li><a href="funzioni.html">Funzioni</a></li><li><a href="dati.html">I tuoi dati</a></li><li><a href="prova.html">Come provarlo</a></li><li><a href="privacy.html">Riservatezza</a></li></ul>
+</div>
+</footer>
+</body>
+</html>

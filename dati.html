@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'none'; style-src 'self'; img-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="color-scheme" content="light dark">
+<title>I tuoi dati · Timone</title>
+<meta name="description" content="Dove stanno i dati di Timone, cosa succede se attivi un servizio AI e quali componenti esterni usa l'app. Con i limiti dichiarati.">
+<link rel="icon" href="icona.svg" type="image/svg+xml">
+<link rel="stylesheet" href="stile.css">
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="header">
+<div class="contenitore">
+<a class="marchio" href="index.html"><img src="icona.svg" width="32" height="32" alt="">Timone</a>
+<nav aria-label="Principale"><ul class="menu"><li><a href="index.html">Timone</a></li><li><a href="funzioni.html">Funzioni</a></li><li><a href="dati.html" aria-current="page">I tuoi dati</a></li><li><a href="prova.html">Come provarlo</a></li></ul></nav>
+<a class="btn btn-giallo btn-piccolo" href="#contatto">Chiedi una dimostrazione</a>
+</div>
+</header>
+
+<main id="contenuto"><div class="contenitore">
+<h1>Dove stanno i tuoi dati</h1>
+<p class="lead">Dipende da come usi Timone. Qui sotto trovi cosa succede in ogni caso, compresi i limiti.</p>
+
+<h2>Sul tuo dispositivo (predefinito)</h2>
+<div class="riquadro">
+<ul>
+<li>Non serve nessuna registrazione: i dati stanno nel browser del tuo dispositivo.</li>
+<li><strong>Niente password né cifratura.</strong></li>
+<li><strong>Nessuna copia automatica.</strong></li>
+<li><strong>Se cancelli i dati del browser, li perdi.</strong></li>
+<li>Puoi esportare copie in formato JSON (un file con tutti i dati dell'azienda). I file esportati vanno protetti da te. <em>Da verificare sulla versione pubblicata.</em></li>
+</ul>
+</div>
+
+<h2>Database su un servizio in rete o sul server dell'azienda (Supabase)</h2>
+<div class="riquadro">
+<p><strong>In preparazione.</strong> È previsto, ma il collegamento non è ancora stato provato su un progetto reale.</p>
+<p>Non è ancora provato che ogni utente veda solo i dati che gli spettano.</p>
+</div>
+
+<h2>Se attivi un servizio AI</h2>
+<div class="riquadro">
+<ul>
+<li>Nessun servizio è attivo in partenza.</li>
+<li>Quando fai una richiesta, i dati dell'azienda e le tue domande vanno al servizio che hai scelto.</li>
+<li>Con il passaggio automatico, se un servizio fallisce la stessa richiesta può andare a un altro tra quelli attivi.</li>
+<li>Alcuni piani gratuiti possono usare i dati inviati.</li>
+<li><strong>Non c'è anonimizzazione.</strong></li>
+<li>Le chiavi di accesso sono salvate nel browser, senza cifratura.</li>
+</ul>
+</div>
+
+<h2>Componenti esterni</h2>
+<div class="riquadro">
+<ul>
+<li>Per leggere i file Excel l'app scarica il lettore SheetJS da <code>cdn.sheetjs.com</code> (la lettura dei file Excel non è ancora provata).</li>
+<li>In modalità database l'app scarica la libreria Supabase da <code>cdn.jsdelivr.net</code>.</li>
+</ul>
+<p>Quei servizi ricevono i normali dati tecnici di connessione, come l'indirizzo IP.</p>
+</div>
+<p class="nota">Questa pagina descrive l'app Timone, non questo sito: il sito non raccoglie dati (vedi <a href="privacy.html">Riservatezza</a>).</p>
+<section class="cta" aria-labelledby="cta-t">
+<h2 id="cta-t">Vuoi vederlo in azione?</h2>
+<p>Timone è in prova e cerca aziende pilota. Scrivici per vedere una dimostrazione con dati simulati.</p>
+<p><a class="btn" href="#contatto">Chiedi una dimostrazione</a></p>
+</section>
+</div></main>
+<footer class="footer">
+<div class="contenitore">
+<p><strong>Timone</strong> · versione di prova · riferimento: app Timone 1.15.2</p>
+<p>Questo sito non usa biscotti, statistiche o moduli. <a href="privacy.html">Riservatezza</a></p>
+<p id="contatto"><strong>Chiedi una dimostrazione:</strong> scrivi a <span class="mancante">da completare</span><!-- DA-COMPILARE: EMAIL_CONTATTO --></p>
+<ul class="footer-lista"><li><a href="funzioni.html">Funzioni</a></li><li><a href="dati.html">I tuoi dati</a></li><li><a href="prova.html">Come provarlo</a></li><li><a href="privacy.html">Riservatezza</a></li></ul>
+</div>
+</footer>
+</body>
+</html>
