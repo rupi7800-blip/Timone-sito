@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 150" role="img" aria-label="Una bussola con un tragitto tratteggiato che porta a una bandierina">
+<rect width="240" height="150" fill="#10243a"/>
+<g stroke="#4fc3bb" stroke-width="2" opacity=".5" fill="none">
+<path d="M0 126 C 40 112, 80 136, 120 122 S 200 112, 240 124"/>
+<path d="M0 138 C 40 126, 80 148, 120 136 S 200 126, 240 138"/>
+</g>
+<circle cx="76" cy="70" r="44" fill="#1b4468" stroke="#4fc3bb" stroke-width="5"/>
+<g stroke="#e8edf2" stroke-width="3" stroke-linecap="round"><path d="M76 30v8M76 102v8M36 70h8M108 70h8"/></g>
+<path d="M76 70l11-30 -11 14-11-14z" fill="#f2c14e"/>
+<path d="M76 70L65 100l11-14 11 14z" fill="#e8edf2"/>
+<circle cx="76" cy="70" r="5" fill="#10243a"/>
+<path d="M126 86C150 76 160 48 184 56" fill="none" stroke="#f2c14e" stroke-width="4" stroke-linecap="round" stroke-dasharray="2 10"/>
+<path d="M190 66V28" stroke="#e8edf2" stroke-width="4" stroke-linecap="round"/>
+<path d="M192 30h30l-8 10 8 10h-30z" fill="#4fc3bb"/>
+</svg>

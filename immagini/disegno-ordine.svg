@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 150" role="img" aria-label="Fogli sparsi a sinistra che diventano un cruscotto ordinato a destra">
+<rect width="240" height="150" fill="#10243a"/>
+<g fill="#e8edf2" opacity=".55">
+<rect x="14" y="26" width="30" height="38" rx="3" transform="rotate(-14 29 45)"/>
+<rect x="40" y="62" width="30" height="38" rx="3" transform="rotate(11 55 81)"/>
+<rect x="12" y="84" width="30" height="38" rx="3" transform="rotate(-6 27 103)"/>
+<rect x="52" y="22" width="30" height="38" rx="3" transform="rotate(20 67 41)"/>
+</g>
+<g stroke="#10243a" stroke-width="2" stroke-linecap="round" opacity=".7">
+<path d="M20 38l18-4M46 74l20 4M18 96l22-2M58 34l16 8"/>
+</g>
+<path d="M92 75h30m-9-9l9 9-9 9" fill="none" stroke="#f2c14e" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="136" y="26" width="92" height="98" rx="8" fill="#1b4468" stroke="#4fc3bb" stroke-width="2"/>
+<rect x="146" y="36" width="34" height="22" rx="4" fill="#4fc3bb"/>
+<rect x="184" y="36" width="34" height="22" rx="4" fill="#f2c14e"/>
+<rect x="148" y="86" width="12" height="28" rx="2" fill="#4fc3bb"/>
+<rect x="166" y="74" width="12" height="40" rx="2" fill="#4fc3bb"/>
+<rect x="184" y="64" width="12" height="50" rx="2" fill="#f2c14e"/>
+<rect x="202" y="78" width="12" height="36" rx="2" fill="#4fc3bb"/>
+</svg>
